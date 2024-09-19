@@ -1,28 +1,22 @@
 {
-  "name": "daath-api",
-  "version": "1.0.0",
-  "description": "API with esoteric and stoic quotes",
-  "main": "app.js",
-  "scripts": {
-    "dev": "nodemon --exec babel-node src/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/trickgirardi/daath-api.git"
-  },
-  "author": "trickgirardi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/trickgirardi/daath-api/issues"
-  },
-  "homepage": "https://github.com/trickgirardi/daath-api#readme",
-  "dependencies": {
-    "express": "^4.21.0",
-    "nodemon": "^3.1.5"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.25.6",
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4"
-  }
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon --exec babel-node src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@supabase/supabase-js": "^2.45.4",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "body-parser": "^1.20.3",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
 }
