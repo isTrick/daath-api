@@ -1,6 +1,5 @@
 import { Router } from "express"
-import { listQuotes } from "../service/quote"
-import { createQuote } from "../service/quote"
+import { listQuotes, createQuote, deleteQuote, updateQuote } from "../service/quote"
 
 const router = Router()
 
@@ -10,8 +9,22 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const quote = await createQuote(req.body)
-    res.status(201).send(quote)
+    try {
+        const quote = await createQuote(req.body)
+        res.status(201).send(quote)
+    } catch (err) {
+        res.status(400).send(err)
+    }
+})
+
+router.delete('/:quoteId', async (req, res) => {
+    await deleteQuote(req.params.quoteId)
+    res.send()
+})
+
+router.put('/:quoteId', async (req, res) => {
+    await updateQuote(req.params.quoteId, req.body)
+    res.send()
 })
 
 export default router
