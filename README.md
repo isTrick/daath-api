@@ -1,3 +1,5 @@
 - Express.js
-- Babel, Nodemon, Body Parser
 - MongoDB (with Mongosee)
+
+## TODO
+- Setup a bundler
