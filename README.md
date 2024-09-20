@@ -3,3 +3,4 @@
 
 ## TODO
 - Setup a bundler
+- Setup Swagger
